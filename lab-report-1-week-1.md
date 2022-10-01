@@ -2,6 +2,7 @@ CSE15L Lab Report 1
 
 Installing VSCode:
 To install VSCode, I went to https://code.visualstudio.com/download and downloaded the installer for my respective operating system(I use Windows). I then followed the instructions on the installer in order to complete the installation for VSCode. After this, I launched VSCode and opened a window that looked like this:
+![Image](lab1pictures/pic1.png)
 
 
 Remotely Connecting:
