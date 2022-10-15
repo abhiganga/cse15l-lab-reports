@@ -83,6 +83,7 @@ The fixed code:
 
 ![Image](lab2pictures/pic8.png)
 
+The picture above shows the fixed code. When the original code was run, the output would be 5,4,3,4,5 instead of 5,4,3,2,1. Two problems existed with the original code. One being that the loop iterated through the entire list and two being that with the original code, it would iterate through the original list and rearrange the elements but in doing so would cause repeats in the new list because the elements replaced in the first few iterations of the loop would get lost. To fix these problems, I made sure to iterate only through the first half of the list and also used a placeholder variable so that the elements would not get lost as they were being rearranged.
 
 
 **BUG #2**
@@ -106,6 +107,9 @@ The original code:
 The fixed code:
 
 ![Image](lab2pictures/pic12.png)
+
+The picture above shows the fixed code. The symptom was caused because an infinite loop occurs with the original code thus causing an OutOfMemoryError. The infinite loop occurs because of the last while loop. The fix for this is relatively simple. All I had to do was replace "index1 += 1" with "index2 += 1". The reason this change needed to occur is because the while loop is iterating relative to index2 but because the original code had index1 increment instead of index2, the code got stuck in an infinite loop as resulted in the OutOfMemoryError.
+
 
 
 
