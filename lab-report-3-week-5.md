@@ -24,7 +24,7 @@ technical/government/Media/Legal_hotline.txt
 technical/government/Media/Legal_services_for_poor.txt
 technical/government/Media/Legal_system_fails_poor.txt
 ```
-Here, I used the -iname option and searched "legal* " and as a result, all the .txt files starting with "legal"(not case sensitive) got displayed. Had I done this search using just -name "legal*", no results would have been displayed because all the .txt files starting with "legal" start with a capital L. The -iname option is also useful in the fact that if there were file names that started with "legal" and "Legal", using the -iname option once would have displayed all the files wheras if I used the -name option, I would have to call the find command twice, once for "legal" and another time for "Legal" to see the same results.
+Here, I used the -iname option and searched "legal"*"" and as a result, all the .txt files starting with "legal"(not case sensitive) got displayed. Had I done this search using just -name "legal*", no results would have been displayed because all the .txt files starting with "legal" start with a capital L. The -iname option is also useful in the fact that if there were file names that started with "legal" and "Legal", using the -iname option once would have displayed all the files wheras if I used the -name option, I would have to call the find command twice, once for "legal" and another time for "Legal" to see the same results.
 
 
 Example 2:
