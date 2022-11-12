@@ -3,6 +3,7 @@
 For this lab report, I decided to research the find command.
 
 **Option 1: -iname**
+
 Previously in Week 4 lab, we saw the -name option for the find command. A problem with this command is that it is case sensitive. In the case that you are trying to perform a broader search(by not being case sensitive), you can use -iname.
 
 Example 1:
@@ -93,6 +94,7 @@ technical/government/Media/agency_expands.txt
 Here, I used the -iname option and searched "A*" and as a result, all the .txt files starting with upper and lower case "A" got displayed. The -iname, relative to the -name opttion is very useful in this case because all the files starting with "a" or "A" were displayed with one command wheras if I used the -name option, I would have to call the find command twice.
 
 **Option 2: -mmin**
+
 The next option I will be discussing is -mmin option. This option is useful because it displays what files were modified X number of minutes ago. This is useful when you are working with many files(like we are dong in docsearch) and want to see what files were modified when.
 
 Example 1:
@@ -137,6 +139,7 @@ Example 3:
 Here, I waited a while and then used the -mmin option and the -10 which means I am searching for files that were modified in the last 10 minutes. For the case of this example, no files were displayed because I made sure to wait at least 10 minutes so that the file from example 1 that I created would not be displayed.
 
 **Option 3: -size**
+
 The last option I will be discussing is -size option. This option is useful because it displays files based on a given size. This is especially useful when you are working with many files(like we are dong in docsearch) and want to see what files are taking up how much/majority of the storage.
 
 Example 1:
