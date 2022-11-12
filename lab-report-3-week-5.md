@@ -4,7 +4,7 @@ For this lab report, I decided to research the find command.
 
 
 
-**Option 1: -iname**
+## Option 1: -iname**
 
 Previously in Week 4 lab, we saw the -name option for the find command. A problem with this command is that it is case sensitive. In the case that you are trying to perform a broader search(by not being case sensitive), you can use -iname.
 
@@ -97,7 +97,7 @@ Here, I used the -iname option and searched "A*" and as a result, all the .txt f
 
 
 
-**Option 2: -mmin**
+## Option 2: -mmin**
 
 The next option I will be discussing is -mmin option. This option is useful because it displays what files were modified X number of minutes ago. This is useful when you are working with many files(like we are dong in docsearch) and want to see what files were modified when.
 
@@ -144,7 +144,7 @@ Here, I waited a while and then used the -mmin option and the -10 which means I 
 
 
 
-**Option 3: -size**
+## Option 3: -size**
 
 The last option I will be discussing is -size option. This option is useful because it displays files based on a given size. This is especially useful when you are working with many files(like we are dong in docsearch) and want to see what files are taking up how much/majority of the storage.
 
