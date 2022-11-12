@@ -6,7 +6,7 @@ For this lab report, I decided to research the find command.
 
 ## Option 1: -iname
 
-Previously in Week 4 lab, we saw the -name option for the find command. A problem with this command is that it is case sensitive. In the case that you are trying to perform a broader search(by not being case sensitive), you can use -iname.
+Previously in Week 4 lab, we saw the ```-name``` option for the find command. A problem with this command is that it is case sensitive. In the case that you are trying to perform a broader search(by not being case sensitive), you can use ```-iname```.
 
 Example 1:
 ```
@@ -24,7 +24,7 @@ technical/government/Media/Legal_hotline.txt
 technical/government/Media/Legal_services_for_poor.txt
 technical/government/Media/Legal_system_fails_poor.txt
 ```
-Here, I used the -iname option and searched ```"legal*"``` and as a result, all the .txt files starting with "legal"(not case sensitive) got displayed. Had I done this search using just -name ```"legal*"```, no results would have been displayed because all the .txt files starting with "legal" start with a capital L. The -iname option is also useful in the fact that if there were file names that started with "legal" and "Legal", using the -iname option once would have displayed all the files wheras if I used the -name option, I would have to call the find command twice, once for "legal" and another time for "Legal" to see the same results.
+Here, I used the ```-iname``` option and searched ```"legal*"``` and as a result, all the .txt files starting with "legal"(not case sensitive) got displayed. Had I done this search using just ```-name "legal*"```, no results would have been displayed because all the .txt files starting with "legal" start with a capital L. The ```-iname``` option is also useful in the fact that if there were file names that started with "legal" and "Legal", using the ```-iname``` option once would have displayed all the files wheras if I used the ```-name``` option, I would have to call the find command twice, once for "legal" and another time for "Legal" to see the same results.
 
 
 Example 2:
@@ -34,7 +34,7 @@ technical/government/Alcohol_Problems/Session2-PDF.txt
 technical/government/Alcohol_Problems/Session3-PDF.txt
 technical/government/Alcohol_Problems/Session4-PDF.txt
 ```
-Here, I used the -iname option and searched "session*" and as a result, all the .txt files starting with "session"(not case sensitive) got displayed. Had I done this search using just -name "session*", no results would have been displayed because all the .txt files starting with "session" start with a capital S.
+Here, I used the ```-iname``` option and searched ```"session*"``` and as a result, all the .txt files starting with "session"(not case sensitive) got displayed. Had I done this search using just ```-name "session*"```, no results would have been displayed because all the .txt files starting with "session" start with a capital S.
 
 ```
 [aganga@ieng6-201]:docsearch:85$ find technical/ -iname "A*"
@@ -93,13 +93,13 @@ technical/government/Media/Attorney_gives_his_time.txt
 technical/government/Media/Avoids_Budget_Cut.txt
 technical/government/Media/agency_expands.txt
 ```
-Here, I used the -iname option and searched "A*" and as a result, all the .txt files starting with upper and lower case "A" got displayed. The -iname, relative to the -name opttion is very useful in this case because all the files starting with "a" or "A" were displayed with one command wheras if I used the -name option, I would have to call the find command twice.
+Here, I used the ```-iname``` option and searched ```"A*"``` and as a result, all the .txt files starting with upper and lower case "A" got displayed. The ```-iname```, relative to the ```-name``` option is very useful in this case because all the files starting with "a" or "A" were displayed with one command whereas if I used the ```-name``` option, I would have to call the find command twice.
 
 
 
 ## Option 2: -mmin
 
-The next option I will be discussing is -mmin option. This option is useful because it displays what files were modified X number of minutes ago. This is useful when you are working with many files(like we are dong in docsearch) and want to see what files were modified when.
+The next option I will be discussing is ```-mmin``` option. This option is useful because it displays what files were modified X number of minutes ago. This is useful when you are working with many files(like we are dong in docsearch) and want to see what files were modified when.
 
 Example 1:
 ```
@@ -107,7 +107,7 @@ Example 1:
 .
 ./new_file.txt
 ```
-Here, I used the -mmin option and the -1 which means I am searching for files that were modified in the last minute. In the case of this example, I created a new file called new_file.txt and then ran the find command and as a result displayed the code block above because I created the new file and ran the command within a minute, thus giving the result above.
+Here, I used the ```-mmin``` option and the -1 which means I am searching for files that were modified in the last minute. In the case of this example, I created a new file called new_file.txt and then ran the find command and as a result displayed the code block above because I created the new file and ran the command within a minute, thus giving the result above.
 
 
 Example 2:
@@ -132,7 +132,7 @@ technical/government/About_LSC/conference_highlights.txt
 technical/government/About_LSC/diversity_priorities.txt
 technical/government/About_LSC/reporting_system.txt
 ```
-Here, I used the -mmin option and +10 which means I am searching for files/directories(within technical/government/About_LSC/) that were modified more than 10 minutes ago. This as a result displayed all of the files in About_LSC because all of these files were "modified" when I originally cloned this repository to my VSCode and have remained unmodified since then.
+Here, I used the ```-mmin``` option and +10 which means I am searching for files/directories(within technical/government/About_LSC/) that were modified more than 10 minutes ago. This as a result displayed all of the files in About_LSC because all of these files were "modified" when I originally cloned this repository to my VSCode and have remained unmodified since then.
 
 
 Example 3:
@@ -140,13 +140,13 @@ Example 3:
 [aganga@ieng6-201]:docsearch:90$ find -mmin -10
 [aganga@ieng6-201]:docsearch:91$ 
 ```
-Here, I waited a while and then used the -mmin option and the -10 which means I am searching for files that were modified in the last 10 minutes. For the case of this example, no files were displayed because I made sure to wait at least 10 minutes so that the file from example 1 that I created would not be displayed.
+Here, I waited a while and then used the ```-mmin``` option and the -10 which means I am searching for files that were modified in the last 10 minutes. For the case of this example, no files were displayed because I made sure to wait at least 10 minutes so that the file from example 1 that I created would not be displayed.
 
 
 
 ## Option 3: -size
 
-The last option I will be discussing is -size option. This option is useful because it displays files based on a given size. This is especially useful when you are working with many files(like we are dong in docsearch) and want to see what files are taking up how much/majority of the storage.
+The last option I will be discussing is ```-size``` option. This option is useful because it displays files based on a given size. This is especially useful when you are working with many files(like we are dong in docsearch) and want to see what files are taking up how much/majority of the storage.
 
 Example 1:
 ```
@@ -181,7 +181,7 @@ technical/government/Gen_Account_Office/gg96118.txt
 technical/government/Gen_Account_Office/im814.txt
 technical/government/Gen_Account_Office/pe1019.txt
 ```
-Here, I used the -size option and +200 which displays all files in technical/ that are more than 200 bytes of storage, thus explaining the display above. This is useful as if I was worried about storage, I can now see the .txt files that are taking up the most relative space.
+Here, I used the ```-size``` option and +200 which displays all files in technical/ that are more than 200 bytes of storage, thus explaining the display above. This is useful as if I was worried about storage, I can now see the .txt files that are taking up the most relative space.
 
 
 Example 2:
@@ -190,7 +190,7 @@ Example 2:
 ./.git/objects/pack/pack-76c2be97747be8c169abcc0a0a6082bddbd7ec39.pack
 ./docsearch/.git/objects/pack/pack-b18429902f8e5328cd035841e8df94542e262a90.pack
 ```
-Here, I used the -size option and +5M which displays anything that is more than 5 megabytes of storage, thus explaining the display above. This is useful because now I can see exactly is taking 5 or more megabytes or storage if I was worried about storage.
+Here, I used the ```-size``` option and +5M which displays anything that is more than 5 megabytes of storage, thus explaining the display above. This is useful because now I can see exactly is taking 5 or more megabytes or storage if I was worried about storage.
 
 
 Example 3:
@@ -361,7 +361,7 @@ technical/plos/pmed.0020275.txt
 technical/plos/pmed.0020278.txt
 technical/plos/pmed.0020281.txt
 ```
-Here, I used the -size option and -10 which displays anything that is less than 10 bytes of storage, thus explaining the display above. This is useful because now I can see the files that have the least relative impact in terms of using storage space.
+Here, I used the ```-size``` option and -10 which displays anything that is less than 10 bytes of storage, thus explaining the display above. This is useful because now I can see the files that have the least relative impact in terms of using storage space.
 
 
 
