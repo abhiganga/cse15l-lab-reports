@@ -32,14 +32,14 @@ fi
 ```
 
 For the first example, I used https://github.com/ucsd-cse15l-f22/list-methods-lab3. Here is the output I received:
-
+![Image](lab1pictures/pic10.png)
 
 
 
 For the second example, I used https://github.com/ucsd-cse15l-f22/list-methods-corrected. Here is the output I received:
-
+![Image](lab1pictures/pic11.png)
 
 
 
 For the third example, I used https://github.com/ucsd-cse15l-f22/list-methods-filename. Here is the output I received:
-
+![Image](lab1pictures/pic12.png)
