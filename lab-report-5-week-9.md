@@ -43,3 +43,6 @@ For the second example, I used https://github.com/ucsd-cse15l-f22/list-methods-c
 
 For the third example, I used https://github.com/ucsd-cse15l-f22/list-methods-filename. Here is the output I received:
 ![Image](lab1pictures/pic12.png)
+
+For this lab report, I will be using example 3 to trace the script. The first 4 lines of code ran perfectly fine(exit code of 0). The first line gets rid of any pre-existing stedent submission. Line 2 then clones the new given repository. Line 3 copies the tester file and line 4 moves us into the new directory.
+Now we get to the very first if statement. This if statement checks if there is not a file named ListExamples.java in our current working directory. Since in this case, the if statement is true(in that there is no file labeled ListExamples.java), it jumps to the then statement. From there, it echoes the line "The file ListExamples.java was not found; score is 0." and exits with an exit code of 0.
