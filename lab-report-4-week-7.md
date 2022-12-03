@@ -24,6 +24,42 @@ Type "p"
 :w<Enter>
 ```
 
+
+Here is a step by step breakdown of the vim commands provided above:
+
+
+Typing the first command "vim DocSearchServer.java" in terminal brings this result:
+![Image](lab1pictures/pic111.png)
+
+
+Typing the second command "/star" highlights the first word with "star" in it and it looks like this:
+![Image](lab1pictures/pic112.png)
+
+
+Typing the third command "dw" ends up deleting the word("start") that was highlighted previously:
+![Image](lab1pictures/pic113.png)
+
+
+From here, you enter the word "base" and it the end result should look like this:
+![Image](lab1pictures/pic114.png)
+
+
+The next step, typing "yiw" doesn't make any visual changes but typing "yiw" while the cursor is still on the word "base" will essentially yank the word(this will be utilized later to paste the same word).
+
+For the next steps, typing "/star" and dw will essentially get to the next "star" in the file and delete the word at that position(the change was made at the position of where my cursor is):
+![Image](lab1pictures/pic115.png)
+
+
+For the next step, typing "p" at the position of the cursor will paste the word "base" and the result will look like this:
+![Image](lab1pictures/pic116.png)
+
+
+The next few steps(up to type "p") essentially just repeat this process but for the next word "start" that occurs in the code. The result of these repeated steps will look like this:
+![Image](lab1pictures/pic117.png)
+
+
+The final command :w<Enter> will save the changes you made.
+
 Performing this set of tasks ensures that DocSearchServer.java is altered to look like this:
 ```
 import java.io.File;
