@@ -47,14 +47,17 @@ From here, you enter the word "base" and it the end result should look like this
 The next step, typing "yiw" doesn't make any visual changes but typing "yiw" while the cursor is still on the word "base" will essentially yank the word(this will be utilized later to paste the same word).
 
 For the next steps, typing "/star" and dw will essentially get to the next "star" in the file and delete the word at that position(the change was made at the position of where my cursor is):
+
 ![Image](lab1pictures/pic115.png)
 
 
 For the next step, typing "p" at the position of the cursor will paste the word "base" and the result will look like this:
+
 ![Image](lab1pictures/pic116.png)
 
 
 The next few steps(up to type "p") essentially just repeat this process but for the next word "start" that occurs in the code. The result of these repeated steps will look like this:
+
 ![Image](lab1pictures/pic117.png)
 
 
